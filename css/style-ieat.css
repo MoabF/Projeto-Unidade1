@@ -1,0 +1,48 @@
+/*reset dos atributos padrões*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*formatação de textos*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: darkblue;
+    color: white;
+    padding: 15px;
+    box-shadow: 0 10px 10px  rgb(163, 163, 163);
+}
+h1{
+    font-size: 45px;
+}
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+    text-decoration:none;
+  }
+a:visited {
+    color: white;
+  }
+  
+a:hover {
+   color: aqua;
+   text-decoration:underline;
+  }
+a:active {
+    color: indigo;
+}
+

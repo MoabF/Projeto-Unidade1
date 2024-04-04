@@ -9,6 +9,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
+    display: flex;
     background-color: darkblue;
     color: white;
     padding: 15px;
@@ -16,6 +17,17 @@ header{
 }
 h1{
     font-size: 45px;
+}
+.logomarca{
+    width: 30%;
+    height: auto;
+    text-align: center;
+}
+.sites-cabecalho{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: auto;
 }
 nav ul {
     list-style-type: none;

@@ -4,19 +4,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /*formatação de textos*/
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
-header{
+
+header {
     background-color: darkblue;
     color: white;
     padding: 15px;
-    box-shadow: 0 10px 10px  rgb(163, 163, 163);
+    box-shadow: 0 10px 10px rgb(163, 163, 163);
 }
-h1{
+
+h1 {
     font-size: 45px;
 }
+
 nav ul {
     list-style-type: none;
 }
@@ -32,17 +36,46 @@ nav ul li a {
 
 a:link {
     color: white;
-    text-decoration:none;
-  }
+    text-decoration: none;
+}
+
 a:visited {
     color: white;
-  }
-  
+}
+
 a:hover {
-   color: aqua;
-   text-decoration:underline;
-  }
+    color: aqua;
+    text-decoration: underline;
+}
+
 a:active {
     color: indigo;
 }
 
+/* Footer */
+
+#footer {
+    display: flex;
+    flex-direction: column-reverse row;
+    align-items: center;
+    font-size: medium;
+    background: linear-gradient(
+        rgb(207, 204, 10),
+        rgb(15, 31, 172)
+    ); /* Podemos mudar dps */
+}
+
+#footer li {
+    display: inline-block;
+    padding: 0.3rem 0.3rem;
+}
+
+#photo {
+    margin: 1vh 10vw;
+    width: 30vw;
+    display: block;
+}
+
+.icon {
+    width: 2rem;
+}

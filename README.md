@@ -4,32 +4,42 @@
 
 - Página de Apresentação
 ```
-index.html
+inicio.html
 ```
 
 - Página de Informações
 ```
-info.html
+sobre.html
 ```
 
-- Página de História da Empresa
+- Página de Cursos Oferecidos
 ```
-about.html
+cursos.html
 ```
 
-- Página de Cadastro de Aluno
+- Página de Grades dos Cursos
+```
+grades.html
+```
+
+- Página de Corpo Docente dos Cursos
+```
+docentes.html
+```
+
+- Página de Trabalhe Conosco/Carreira
 ```
 ├── forms/
 │   ├── formulario-trabalhe-conosco.html
 ```
 
-- Página de Cadastro de Funcionário
+- Página de Cadastro de Matricula
 ```
 ├── forms/
 │   ├── formulario-matricula.html
 ```
 
-- Página de Cadastro de Corpo Docente
+- Página de Contato/Fale Conosco
 ```
 ├── forms/
 │   ├── formulario-contato.html

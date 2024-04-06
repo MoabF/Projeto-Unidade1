@@ -7,37 +7,54 @@
   <link rel="stylesheet" href="../css/style-forms.css">
 </head>
 <body>
-    <div id="div1">
-       <h1>Cabeçalho</h1>
+  <header>
+    <div class="logomarca">
+       <a href="docentes.html"> <img id="logo" src="../imgs/logo_claro.png" alt="Instituto Educacional Alan Turing"> </a> 
+        <br>
     </div>
+    <div class="sites-cabecalho">
+        <nav>
+            <ul>
+                <li><a href="inicio.html">INÍCIO</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="cursos.html">CURSOS</a></li>
+                <li><a href="grades.html">GRADES CURRICULARES</a></li>
+                <li><a href="docentes.html">DOCENTES</a></li>
+                <li><a href="ieat-contato.html">TRABALHE CONOSCO</a></li>
+                <li><a href="ieat-matricula.html">MATRICULE-SE</a></li>
+                <li><a href="ieat-login.html">CONTATO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
   <form>
     <br>
     <div class="work">
         <h2>Trabalhe Conosco</h2>
         <p>Cadastre seu currículo e participe das nossas seleções para ser um dos nossos colaboradores</p>
-        <hr>
+        <br><hr><br>
     </div>
     <div class="form-group">
-      <label for="name">Nome:</label>
-      <input type="text" id="name" name="name" required>
+      <label for="name">Nome:*</label>
+      <input type="text" id="name" name="name" placeholder="Seu nome" required>
     </div>
     <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <label for="email">E-mail:*</label>
+      <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
     </div>
-    <div class="form-group"></div>
+    
+    <div class="form-group">
+      <label for="i-tel">Telefone 1:*</label>
+      <input type="tel" name="phone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" id="i-tel" placeholder="99 99999-9999" required>
+      </div>
+    <div class="form-group">
+      <label for="i-tel">Telefone 2:</label>
+      <input type="tel" name="phone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" id="i-tel" placeholder="99 99999-9999" >
+      </div>
+      <div class="form-group"></div>
       <label for="i-date">Qual a data do seu nascimento?</label>
       <input type="date" name="bday" id="i-date" max="2021-11-03"><br/><br/>
     </div>
-    <div class="form-group">
-      <label for="i-cell">Celular 1:</label>
-      <input type="tel" name="phone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" id="i-tel" required>
-      </div>
-    <div class="form-group">
-      <label for="i-cell">Celular 2:</label>
-      <input type="tel" name="phone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" id="i-tel">
-      </div>
-
       <div class="form-group">
         <label for="Genero">Gênero:</label>
         <select id="Genero" name="Genero">
@@ -48,8 +65,8 @@
         </select>
        </div>
        <div class="form-group">
-        <label for="estado">Estado Civil:</label>
-        <select id="estado" name="estado">
+        <label for="estado">Estado Civil:*</label>
+        <select id="estado" name="estado" required>
            <option value="" selected disabled hidden>Selecione</option>
            <option value="Solteiro(a)">Solteiro(a)</option>
            <option value="Casado(a)">Casado(a)</option>
@@ -57,8 +74,8 @@
         </select>
        </div>
     <div class="form-group">
-        <label for="def">Possui alguma deficiencia?:</label>
-        <input type="radio" name="def" value="possuidef" requiredgit > Sim
+        <label for="def">Possui alguma deficiencia?*</label>
+        <input type="radio" name="def" value="possuidef" required> Sim
         <input type="radio" name="def" value="naopossuidef"> Não
       </div>
       <div class="form-group">
@@ -84,7 +101,7 @@
         </select>
        </div>
        <div class="form-group">
-        <label for="cargo">Cargo Pretendido:</label>
+        <label for="cargo">Cargo Pretendido:*</label>
         <select id="cargo" name="cargo" required>
            <option value="" selected disabled hidden>Selecione</option>
            <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
@@ -106,12 +123,35 @@
         </select>
        </div>
       <div class="form-group">
-        <label for="i-file">Anexar currículo:</label>
+        <label for="i-file">Anexar currículo:*</label>
 <input type="file" name="curriculo" id="curriculo"  required>
       </div>
       
       <button class="benviar" type="submit">Enviar</button>
       <button class="blimpar" type="reset">Limpar</button>
   </form>
+  <footer id="footer">
+    <section id="copyright">© 2024 IEAT. All Rights Reserved.</section>
+    <section id="links">
+        <ul>
+            <li><a href="https://github.com/MoabF/Projeto-Unidade1">Sobre</a></li>
+            <li><a href="https://github.com/MoabF/Projeto-Unidade1">Cursos</a></li>
+            <li><a href="https://github.com/MoabF/Projeto-Unidade1">Docentes</a></li>
+            <li><a href="https://github.com/MoabF/Projeto-Unidade1">Contato</a></li>
+        </ul>
+    </section>
+    <section id="socials">
+        <ul>
+            <li><a href="https://github.com/MoabF/Projeto-Unidade1"><img class="icon" src="../imgs/github.png"
+                        alt="Github Icon"></a></li>
+            <li><a href="https://github.com/MoabF/Projeto-Unidade1"><img class="icon" src="../imgs/discord.png"
+                        alt="Discord Icon"></a></li>
+            <li><a href="https://github.com/MoabF/Projeto-Unidade1"><img class="icon" src="../imgs/twitter.png"
+                        alt="Twitter Icon"></a></li>
+            <li><a href="https://github.com/MoabF/Projeto-Unidade1"><img class="icon" src="../imgs/youtube.png"
+                        alt="Youtube Icon"></a></li>
+        </ul>
+    </section>
+</footer>
 </body>
 </html>

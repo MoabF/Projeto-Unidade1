@@ -20,13 +20,13 @@ about.html
 - Página de Cadastro de Aluno
 ```
 ├── forms/
-│   ├── formulario-aluno.html
+│   ├── formulario-trabalhe-conosco.html
 ```
 
 - Página de Cadastro de Funcionário
 ```
 ├── forms/
-│   ├── formulario-funcionario.html
+│   ├── formulario-matricula.html
 ```
 
 - Página de Cadastro de Corpo Docente

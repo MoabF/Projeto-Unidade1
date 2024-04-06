@@ -32,5 +32,5 @@ about.html
 - Página de Cadastro de Corpo Docente
 ```
 ├── forms/
-│   ├── formulario-docente.html
+│   ├── formulario-contato.html
 ```

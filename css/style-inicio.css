@@ -1,0 +1,84 @@
+.img-inicio {
+    width: 100%;
+    height: auto;
+}
+
+.apresentacao {
+    display: flex;
+    margin: 0 auto;
+    gap: 4rem;
+    align-items: center;
+}
+
+.apresentacao p {
+    max-width: 500px;
+    text-align: justify;
+    color: gray;
+}
+
+.apresentacao img {
+    width: 500px;
+    height: auto;
+}
+
+.saiba-mais {
+    margin: 3rem auto;
+    background: darkblue;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    color: white;
+}
+
+.saiba-mais:hover {
+    cursor: pointer;
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.matricula-e-professor {
+    display: flex;
+    margin: 0 auto;
+    gap: 4rem;
+    align-items: center;
+}
+
+.matricula-e-professor div {
+    display: flex;
+    flex-direction: column;
+}
+
+.matricula-e-professor div a {
+    background: darkblue;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+}
+
+.matricula-e-professor div a:hover {
+    cursor: pointer;
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.info {
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.info div {
+    max-width: 300px;
+}
+
+.info h3 {
+    font-size: initial;
+    margin: 0;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.info h4 {
+    font-weight: 500;
+}

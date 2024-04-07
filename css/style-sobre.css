@@ -1,0 +1,29 @@
+.proposta {
+    margin: 0 auto;
+
+}
+
+.proposta p {
+    text-align: justify;
+}
+
+.proposta img {
+    width: 500px;
+    height: auto;
+    float: right;
+    margin: 0 0 10px 30px;
+}
+
+.saiba-mais {
+    margin: 3rem auto;
+    background: darkblue;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    color: white;
+}
+
+.saiba-mais:hover {
+    cursor: pointer;
+    color: dodgerblue;
+    text-decoration: none;
+}

@@ -27,10 +27,18 @@ header {
 .conteudo{
     flex-direction: row;
 }
-
+.conteudo-coluna{
+    flex-direction: column;
+}
+.artig{
+    text-align: center;
+    flex-direction: column;
+    width: 80%;
+}
 .centralizador{
     justify-content: center;
 }
+
 .post{
     flex-wrap: wrap;
     display: flex;
@@ -43,21 +51,37 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;    
     margin-right: 15px;
-    width: 23%;
+    width: 30%;
     height: auto;
     border: 1px solid grey;
     border-radius: 10px;
     box-shadow: 0 0 10px  rgb(202, 202, 207);   
     text-align: center;
+    flex-direction: column;
+    align-items: flex-end;
 }
 .text{
     width: 90%;
+    overflow: auto;
+    height: 175px;
+    text-align: left;
+}
+.lista{
+    text-align: left;
+}
+ul.list{
+    margin: 25px;
 }
 p{
     margin: 10px;
+    text-align: left;
 }
 h1{
-    margin-top: 25px;
+    margin: 25px;
+}
+h2{
+    margin: 20px;
+   /* width: 100%;*/
 }
 h3{
     font-size: 15px;
@@ -78,6 +102,10 @@ img.post-img{
     width: 90%;
     border-radius: 10px;
     box-shadow: 0 0 10px  rgb(174, 174, 177);   
+}
+img.artigo{
+    width: 60%;
+    margin: 20px;
 }
 .sites-cabecalho {
     display: flex;
@@ -120,10 +148,10 @@ button{
     border-style: none;
     padding: 10px 20px;
     font-size: 15px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 15px;
 }
 /* Footer */
 
@@ -158,3 +186,27 @@ button{
     margin: 1vh 0.3vw;
     width: 2rem;
 }
+table{
+    margin: 35px;
+    width: 90%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+table.coluna{
+    margin: 35px;
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;   
+}
+th,td{
+    padding: 5px;
+    border: 1px solid black;
+}
+ tr:nth-child(even) { 
+    background-color: rgb(241, 246, 247);
+} 
+ tr:nth-child(odd) {
+    background-color: rgb(182, 179, 179);
+} 

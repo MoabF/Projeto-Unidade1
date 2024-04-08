@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário</title>
+  <title>IEAT - Matrícula</title>
+  <link rel="stylesheet" href="../css/style-ieat.css">
   <link rel="stylesheet" href="../css/style-forms.css">
 </head>
+
 <body>
   <header>
     <div class="container">
-    <div class="logomarca">
-  <h1><a href="instituto_educacional_alan_turing.html"> <img class="logo" src="../imgs/logo_escuro_1.png"></a></h1>
-  <br></div>
-  <div class="sites-cabecalho">
-  <nav>
-    <ul>
-        <li><a href="inicio.html">INÍCIO</a></li>
-        <li><a href="sobre.html">SOBRE</a></li>
-        <li><a href="cursos.html">CURSOS</a></li>
-        <li><a href="docentes.html">DOCENTES</a></li>
-        <li><a href="ieat-contato.html">TRABALHE CONOSCO</a></li>
-        <li><a href="ieat-matricula.html">MATRICULE-SE</a></li>
-        <li><a href="ieat-login.html">CONTATO</a></li>
-    </ul>
-  </nav>
-</div>
-</div>
-</header>
+      <div class="logomarca">
+        <h1><a href="../inicio.html"> <img class="logo" src="../imgs/logo_escuro_1.png"></a></h1>
+        <br>
+      </div>
+      <div class="sites-cabecalho">
+        <nav>
+          <ul>
+            <li><a href="../inicio.html">INÍCIO</a></li>
+            <li><a href="../sobre.html">SOBRE</a></li>
+            <li><a href="../cursos.html">CURSOS</a></li>
+            <li><a href="../docentes.html">DOCENTES</a></li>
+            <li><a href="formulario-trabalhe-conosco.html">TRABALHE CONOSCO</a></li>
+            <li><a href="formulario-matricula.html">MATRICULE-SE</a></li>
+            <li><a href="formulario-contato.html">CONTATO</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
   <form>
     <br>
     <div class="work">
-        <h2>Matricule-se</h2>
-        <br><hr><br>
+      <h2>Matricule-se</h2>
+      <br>
+      <hr><br>
     </div>
     <div class="form-group">
       <h3>Dados Pessoais:</h3>
-  </div>
+    </div>
     <div class="form-group">
       <label for="name">Nome:*</label>
       <input type="text" id="name" name="name" placeholder="Seu nome" required>
@@ -46,98 +51,101 @@
     </div>
     <div class="form-group">
       <label for="i-tel">Telefone 1:*</label>
-      <input type="tel" name="phone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" id="i-tel" placeholder="00 00000-0000" required>
-      </div>
+      <input type="tel" name="phone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" id="i-tel" placeholder="00 00000-0000"
+        required>
+    </div>
     <div class="form-group">
       <label for="i-tel">Telefone 2:</label>
-      <input type="tel" name="phone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" id="i-tel" placeholder="00 00000-0000" >
-      </div>
-      <div class="form-group">
-        <label for="cpf">CPF:*</label>
-        <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"  placeholder="000.000.000-00" title="CPF deve estar no formato 000.000.000-00" required>
-      </div>
-      <div class="form-group">
-        <label for="rg">RG:*</label>
-        <input type="text" id="rg" name="rg"  placeholder="RG" required>
-      </div>
-      <div class="form-group"></div>
-      <label for="i-date">Qual a data do seu nascimento?</label>
-      <input type="date" name="bday" id="i-date" max="2021-11-03"><br/><br/>
+      <input type="tel" name="phone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" id="i-tel" placeholder="00 00000-0000">
     </div>
-      <div class="form-group">
-        <label for="Genero">Gênero:</label>
-        <select id="Genero" name="Genero">
-           <option value="" selected disabled hidden>Selecione</option>
-           <option value="Masculino">Masculino</option>
-           <option value="Feminino">Feminino</option>
-           <option value="Outro">Outro</option>
-        </select>
-       </div>
+    <div class="form-group">
+      <label for="cpf">CPF:*</label>
+      <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00"
+        title="CPF deve estar no formato 000.000.000-00" required>
+    </div>
+    <div class="form-group">
+      <label for="rg">RG:*</label>
+      <input type="text" id="rg" name="rg" placeholder="RG" required>
+    </div>
+    <div class="form-group"></div>
+    <label for="i-date">Qual a data do seu nascimento?</label>
+    <input type="date" name="bday" id="i-date" max="2021-11-03"><br /><br />
+    </div>
+    <div class="form-group">
+      <label for="Genero">Gênero:</label>
+      <select id="Genero" name="Genero">
+        <option value="" selected disabled hidden>Selecione</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Feminino">Feminino</option>
+        <option value="Outro">Outro</option>
+      </select>
+    </div>
 
     <div class="form-group">
-        <label for="especial">É portador de alguma necessidade especial?*</label>
-        <input type="radio" name="especial" value="especial" required> Sim
-        <input type="radio" name="especial" value="naoespecial"> Não
-      </div>
-      <div class="form-group">
-        <label for="atendespecial">Requer atendimento especial?*</label>
-        <input type="radio" name="atendespecial" value="reaquer" required> Sim
-        <input type="radio" name="atendespecial" value="naorequer"> Não
-      </div>
-      <div class="form-group">
-        <label for="curso"> Curso pretendido:*</label>
-        <select id="curso" name="curso" required>
-           <option value="" selected disabled hidden>Selecione</option>
-           <option value="ANÁLISE DE REDES">Análise de Redes</option>
-           <option value="BIOINFORMÁTICA">Bioinformática</option>
-           <option value="GERENCIAMENTO DE T.I">Gerenciamento de T.I</option>
-           <option value="ENGENHARIA DA COMPUTAÇÃO">Engenharia da Computação</option>
-           <option value="INTELIGÊNCIA ARTIFICIAL">Inteligência Artificial</option>
-           <option value="INTERNET DAS COISAS">Internet da Coisas</option>
-           <option value="ACESSIBILIDADE TECNOLÓGICA">Acessibilidade Tecnológia</option>
-           <option value="T.I SUSTENTÁVEL">T.I SustentáveL</option>
-           <option value="REALIDADE VIRTUAL E AUMENTADA">Realidade Virtual e Aumentada</option>
-           <option value="TECNOLOGIA E EDUCAÇÃO">Tecnologia e Educação</option>
-           <option value="DESENVOLVIMENTO DE SOFTWARE">Desenvolvimento de Software</option>
-        </select>
-       </div>
-       <div class="form-group">
-        <label for="cargo">Semestre de inicio:*</label>
-        <select id="cargo" name="cargo" required>
-           <option value="" selected disabled hidden>Selecione</option>
-           <option value="1º Semestre de 2024">1º Semestre de 2024</option>
-           <option value="2º Semestre de 2024">2º Semestre de 2024</option>
-           <option value="1º Semestre de 2025">1º Semestre de 2025</option>
-           <option value="2º Semestre de 2025">2º Semestre de 2025</option>
-           <option value="1º Semestre de 2026">1º Semestre de 2026</option>
-           <option value="2º Semestre de 2026">2º Semestre de 2026</option>
-        </select>
-       </div>
-      <button class="benviar" type="submit">Enviar</button>
-      <button class="blimpar" type="reset">Limpar</button>
+      <label for="especial">É portador de alguma necessidade especial?*</label>
+      <input type="radio" name="especial" value="especial" required> Sim
+      <input type="radio" name="especial" value="naoespecial"> Não
+    </div>
+    <div class="form-group">
+      <label for="atendespecial">Requer atendimento especial?*</label>
+      <input type="radio" name="atendespecial" value="reaquer" required> Sim
+      <input type="radio" name="atendespecial" value="naorequer"> Não
+    </div>
+    <div class="form-group">
+      <label for="curso"> Curso pretendido:*</label>
+      <select id="curso" name="curso" required>
+        <option value="" selected disabled hidden>Selecione</option>
+        <option value="ANÁLISE DE REDES">Análise de Redes</option>
+        <option value="BIOINFORMÁTICA">Bioinformática</option>
+        <option value="GERENCIAMENTO DE T.I">Gerenciamento de T.I</option>
+        <option value="ENGENHARIA DA COMPUTAÇÃO">Engenharia da Computação</option>
+        <option value="INTELIGÊNCIA ARTIFICIAL">Inteligência Artificial</option>
+        <option value="INTERNET DAS COISAS">Internet da Coisas</option>
+        <option value="ACESSIBILIDADE TECNOLÓGICA">Acessibilidade Tecnológia</option>
+        <option value="T.I SUSTENTÁVEL">T.I SustentáveL</option>
+        <option value="REALIDADE VIRTUAL E AUMENTADA">Realidade Virtual e Aumentada</option>
+        <option value="TECNOLOGIA E EDUCAÇÃO">Tecnologia e Educação</option>
+        <option value="DESENVOLVIMENTO DE SOFTWARE">Desenvolvimento de Software</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="cargo">Semestre de inicio:*</label>
+      <select id="cargo" name="cargo" required>
+        <option value="" selected disabled hidden>Selecione</option>
+        <option value="1º Semestre de 2024">1º Semestre de 2024</option>
+        <option value="2º Semestre de 2024">2º Semestre de 2024</option>
+        <option value="1º Semestre de 2025">1º Semestre de 2025</option>
+        <option value="2º Semestre de 2025">2º Semestre de 2025</option>
+        <option value="1º Semestre de 2026">1º Semestre de 2026</option>
+        <option value="2º Semestre de 2026">2º Semestre de 2026</option>
+      </select>
+    </div>
+    <button class="benviar" type="submit">Enviar</button>
+    <button class="blimpar" type="reset">Limpar</button>
   </form>
   <footer id="footer">
     <section id="copyright">© 2024 IEAT. All Rights Reserved.</section>
     <section id="links">
-        <ul>
-            <li><a href="https://github.com/MoabF/Projeto-Unidade1">Sobre</a></li>
-            <li><a href="https://github.com/MoabF/Projeto-Unidade1">Cursos</a></li>
-            <li><a href="https://github.com/MoabF/Projeto-Unidade1">Docentes</a></li>
-            <li><a href="https://github.com/MoabF/Projeto-Unidade1">Contato</a></li>
-        </ul>
+      <ul>
+        <li><a href="https://github.com/MoabF/Projeto-Unidade1">Sobre</a></li>
+        <li><a href="https://github.com/MoabF/Projeto-Unidade1">Cursos</a></li>
+        <li><a href="https://github.com/MoabF/Projeto-Unidade1">Docentes</a></li>
+        <li><a href="https://github.com/MoabF/Projeto-Unidade1">Contato</a></li>
+      </ul>
     </section>
     <section id="socials">
-        <ul>
-            <li><a href="https://github.com/MoabF/Projeto-Unidade1"><img class="icon" src="../imgs/github.png"
-                        alt="Github Icon"></a></li>
-            <li><a href="https://github.com/MoabF/Projeto-Unidade1"><img class="icon" src="../imgs/discord.png"
-                        alt="Discord Icon"></a></li>
-            <li><a href="https://github.com/MoabF/Projeto-Unidade1"><img class="icon" src="../imgs/twitter.png"
-                        alt="Twitter Icon"></a></li>
-            <li><a href="https://github.com/MoabF/Projeto-Unidade1"><img class="icon" src="../imgs/youtube.png"
-                        alt="Youtube Icon"></a></li>
-        </ul>
+      <ul>
+        <li><a href="https://github.com/MoabF/Projeto-Unidade1"><img class="icon" src="../imgs/github.png"
+              alt="Github Icon"></a></li>
+        <li><a href="https://github.com/MoabF/Projeto-Unidade1"><img class="icon" src="../imgs/discord.png"
+              alt="Discord Icon"></a></li>
+        <li><a href="https://github.com/MoabF/Projeto-Unidade1"><img class="icon" src="../imgs/twitter.png"
+              alt="Twitter Icon"></a></li>
+        <li><a href="https://github.com/MoabF/Projeto-Unidade1"><img class="icon" src="../imgs/youtube.png"
+              alt="Youtube Icon"></a></li>
+      </ul>
     </section>
-</footer>
+  </footer>
 </body>
+
 </html>

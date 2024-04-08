@@ -1,4 +1,6 @@
 /*reset dos atributos padrões*/
+
+/* 
 * {
     margin: 0;
     padding: 0;
@@ -38,10 +40,10 @@ header {
     height: auto;
     flex-wrap: wrap;
 }
+*/
 
-h1 {
+.name {
     text-align: center;
-    padding-top: 2vh;
 }
 
 .conteudo {
@@ -53,7 +55,7 @@ h1 {
 }
 
 .conteudo > .professor {
-
+    
     padding: 6vh 8vw;
 }
 
@@ -67,6 +69,7 @@ h1 {
     width: 15vw;
 }
 
+/*
 nav ul {
     list-style-type: none;
 }
@@ -96,7 +99,7 @@ a:active {
 }
 
 /* Footer */
-
+/*
 #footer {
     display: flex;
     flex-direction: column-reverse row;
@@ -128,3 +131,4 @@ a:active {
     margin: 1vh 0.3vw;
     width: 2rem;
 }
+*/

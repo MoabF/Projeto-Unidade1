@@ -1,4 +1,5 @@
 /*reset dos atributos padrões*/
+/*
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +7,8 @@
 }
 
 .img-inicio {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 
@@ -27,6 +28,7 @@ header {
   padding: 15px;
   box-shadow: 0 10px 10px rgb(163, 163, 163);
 }
+
 nav ul {
   list-style-type: none;
 }
@@ -37,18 +39,20 @@ nav ul li {
   font-size: 15px;
 }
 
-.container{
+.container {
   display: flex;
   width: 100%;
   height: auto;
   flex-wrap: wrap;
 }
+
 .logomarca {
   width: 30%;
   height: auto;
   text-align: center;
 }
-img.logo{
+
+img.logo {
   width: 90%;
 }
 
@@ -76,9 +80,9 @@ a:hover {
 a:active {
   color: indigo;
 }
-
+*/
 /* Footer */
-
+/*
 #footer {
   display: flex;
   flex-direction: column-reverse row;
@@ -105,69 +109,73 @@ a:active {
   margin: 1vh 0.3vw;
   width: 2rem;
 }
-.work{
-text-align: center;
+
+*/
+
+.work {
+  text-align: center;
 }
-  
-  form {
-   max-width: 800px;
-   min-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    padding-top: 0px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgb(12, 5, 116);
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  input[type="number"],
-  select,
-  textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #999999;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  button {
-    background-color: #07ca00;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  button:hover {
-    border: solid;
-    border-radius: 4px;
-    
-    border-color: #07ca00;
-    background-color: #ffffff;
-    color: #07ca00;
-  }
-  
-  .benviar{
-    margin: 5px;}
-    
-  .blimpar{
-    margin: 5px;
-  }
+
+form {
+  max-width: 800px;
+  min-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  padding-top: 0px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(12, 5, 116);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #07ca00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  border: solid;
+  border-radius: 4px;
+
+  border-color: #07ca00;
+  background-color: #ffffff;
+  color: #07ca00;
+}
+
+.benviar {
+  margin: 5px;
+}
+
+.blimpar {
+  margin: 5px;
+}

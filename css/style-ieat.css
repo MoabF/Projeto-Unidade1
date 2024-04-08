@@ -23,6 +23,12 @@ header {
     width: 100%;
     height: auto;
     flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.sem-margin{
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .conteudo{
     flex-direction: row;
@@ -55,7 +61,7 @@ header {
     height: auto;
     border: 1px solid grey;
     border-radius: 10px;
-    box-shadow: 0 0 10px  rgb(202, 202, 207);   
+    box-shadow: 0 0 10px  rgb(179, 179, 182);   
     text-align: center;
     flex-direction: column;
     align-items: flex-end;
@@ -66,11 +72,22 @@ header {
     height: 175px;
     text-align: left;
 }
+.org{
+    width: 50%;
+}
 .lista{
     text-align: left;
 }
+.lista-organizada{
+    width: 35%;
+}
 ul.list{
     margin: 25px;
+    list-style-type: circle;
+   
+}
+li{
+    margin-top: 5px;
 }
 p{
     margin: 10px;
@@ -81,10 +98,12 @@ h1{
 }
 h2{
     margin: 20px;
-   /* width: 100%;*/
 }
 h3{
     font-size: 15px;
+    margin: 15px;
+}
+h4{
     margin: 15px;
 }
 .logomarca {
@@ -104,8 +123,10 @@ img.post-img{
     box-shadow: 0 0 10px  rgb(174, 174, 177);   
 }
 img.artigo{
-    width: 60%;
+    width: 100%;
     margin: 20px;
+    height: fit-content;
+    border-radius: 5px;
 }
 .sites-cabecalho {
     display: flex;
@@ -208,5 +229,5 @@ th,td{
     background-color: rgb(241, 246, 247);
 } 
  tr:nth-child(odd) {
-    background-color: rgb(182, 179, 179);
+    background-color: rgb(121, 147, 224);
 } 

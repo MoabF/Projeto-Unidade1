@@ -52,21 +52,37 @@ header {
     width: auto;
     flex: 1;
     padding: 2vh 0;
+    align-items: center;
 }
 
-.conteudo > .professor {
-    
-    padding: 6vh 8vw;
+.professor {
+    padding: 3vh 4vw;
+    max-width: 90rem;
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
 }
 
-.conteudo > .professor:nth-child(2n) {
-    align-self: flex-end;
-    text-align: right;
+.left-align {
+    text-align: center;
+    flex: 1;
 }
 
+.left-align > p {
+    text-align: center;
+}
+
+.right-align {
+    flex: 1; 
+    align-self: center;
+    justify-content: center;
+}
 
 .professor_logo {
+    height: 15vw;
     width: 15vw;
+    border-radius: 15rem;
 }
 
 /*

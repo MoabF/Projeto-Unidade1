@@ -109,7 +109,6 @@ h4{
 .logomarca {
     width: 30%;
     height: auto;
-    text-align: center;
 }
 
 img.logo{
@@ -129,8 +128,6 @@ img.artigo{
     border-radius: 5px;
 }
 .sites-cabecalho {
-    display: flex;
-    align-items: center;
     width: 100%;
     height: auto;
 }
@@ -231,3 +228,60 @@ th,td{
  tr:nth-child(odd) {
     background-color: rgb(121, 147, 224);
 } 
+
+@media only screen and (max-width: 600px) {
+    table{
+        margin: 5px;
+    }
+
+    .logomarca{
+        width: 65%;
+    }
+    nav,p,li,table{
+        font-size: 8px;
+    }
+    .container{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+    .post-curso{
+        width: 100%;
+    }
+    h1{
+        font-size: 15px;
+    }
+    h2,h4,button{
+        font-size: 10px;
+    }
+    nav ul li a{
+        font-size: 8px;
+    }
+    img.logo{
+        width: 100%;
+    }
+    .text{
+        height: auto;
+    }
+  }
+
+
+  @media (min-width: 600px) and (max-width: 1200px) {
+    table{
+        font-size: 10px;
+    }
+    img.logo{
+        width: 100%;
+    }
+    .logomarca{
+        width: 60%;
+    }
+    h2{
+        font-size: 20px;
+    }
+    p,button{
+        font-size: 12px;
+    }
+    .post-curso{
+        width: 45%;
+    }
+  }

@@ -78,6 +78,8 @@ header {
     flex: 1; 
     align-self: center;
     justify-content: center;
+    max-height: 20rem; 
+    overflow-y: auto;
 }
 
 .professor_logo {

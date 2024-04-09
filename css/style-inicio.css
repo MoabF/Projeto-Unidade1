@@ -82,3 +82,22 @@
 .info h4 {
     font-weight: 500;
 }
+
+@media (max-width: 600px) {
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .apresentacao img {
+        width: 300px;
+    }
+
+    .matricula-e-professor {
+        flex-direction: column;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+}

@@ -27,3 +27,10 @@
     color: dodgerblue;
     text-decoration: none;
 }
+
+@media (max-width: 600px) {
+    .proposta img {
+        width: 300px;
+        float: none;
+    }
+}

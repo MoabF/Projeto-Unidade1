@@ -1,0 +1,140 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: darkblue;
+    color: white;
+    padding: 15px;
+    box-shadow: 0 10px 10px rgb(163, 163, 163);
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    min-height: 8vh;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkblue;
+    color: white;
+    padding: 10px;
+}
+
+#footer section {
+    margin: 0 10px;
+}
+
+#footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+#footer li {
+    margin: 0 5px;
+}
+
+#socials {
+    margin-left: auto;
+}
+
+.icon {
+    margin: 1vh 0.3vw;
+    width: 2rem;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex: 1;
+    margin: 30px 0;
+    justify-content: center;
+}
+
+/* Video Player */
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.video-player {
+    width: 60vw; /* Ajuste conforme necessário */
+}
+
+.video-list-container {
+    width: 20vw; /* Ajuste conforme necessário */
+}
+
+iframe {
+    height: 60vh;
+    width: 60vw;
+    margin-left: 10vw;
+}
+
+/* Modules and Video List */
+.module {
+    margin-bottom: 10px;
+}
+
+.module h2 {
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+.video-list {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+}
+
+.video-list li {
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play-btn {
+    width: 20px;
+    height: 20px;
+    background-image: url('../imgs/play-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.not-watched,
+.watched {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.watched {
+    background-color: green;
+}

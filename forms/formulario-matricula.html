@@ -34,7 +34,7 @@
   <form>
     <br>
     <div class="work">
-      <h2>Matricule-se</h2>
+      <h2>Registre-se</h2>
       <br>
       <hr><br>
     </div>
@@ -80,7 +80,6 @@
         <option value="Outro">Outro</option>
       </select>
     </div>
-
     <div class="form-group">
       <label for="especial">É portador de alguma necessidade especial?*</label>
       <input type="radio" name="especial" value="especial" required> Sim
@@ -92,36 +91,17 @@
       <input type="radio" name="atendespecial" value="naorequer"> Não
     </div>
     <div class="form-group">
-      <label for="curso"> Curso pretendido:*</label>
-      <select id="curso" name="curso" required>
-        <option value="" selected disabled hidden>Selecione</option>
-        <option value="ANÁLISE DE REDES">Análise de Redes</option>
-        <option value="BIOINFORMÁTICA">Bioinformática</option>
-        <option value="GERENCIAMENTO DE T.I">Gerenciamento de T.I</option>
-        <option value="ENGENHARIA DA COMPUTAÇÃO">Engenharia da Computação</option>
-        <option value="INTELIGÊNCIA ARTIFICIAL">Inteligência Artificial</option>
-        <option value="INTERNET DAS COISAS">Internet da Coisas</option>
-        <option value="ACESSIBILIDADE TECNOLÓGICA">Acessibilidade Tecnológia</option>
-        <option value="T.I SUSTENTÁVEL">T.I SustentáveL</option>
-        <option value="REALIDADE VIRTUAL E AUMENTADA">Realidade Virtual e Aumentada</option>
-        <option value="TECNOLOGIA E EDUCAÇÃO">Tecnologia e Educação</option>
-        <option value="DESENVOLVIMENTO DE SOFTWARE">Desenvolvimento de Software</option>
-      </select>
+      <label for="register-password">Senha:</label>
+      <input type="password" id="register-password" name="password" placeholder="Sua senha" required>
     </div>
     <div class="form-group">
-      <label for="cargo">Semestre de inicio:*</label>
-      <select id="cargo" name="cargo" required>
-        <option value="" selected disabled hidden>Selecione</option>
-        <option value="1º Semestre de 2024">1º Semestre de 2024</option>
-        <option value="2º Semestre de 2024">2º Semestre de 2024</option>
-        <option value="1º Semestre de 2025">1º Semestre de 2025</option>
-        <option value="2º Semestre de 2025">2º Semestre de 2025</option>
-        <option value="1º Semestre de 2026">1º Semestre de 2026</option>
-        <option value="2º Semestre de 2026">2º Semestre de 2026</option>
-      </select>
+      <label for="register-confirm-password">Confirme a Senha:</label>
+      <input type="password" id="register-confirm-password" name="confirm-password" placeholder="Confirme sua senha" required>
     </div>
     <button class="benviar" type="submit">Enviar</button>
     <button class="blimpar" type="reset">Limpar</button>
+    <hr><br>
+    <p>Já tem uma conta? <a id="fazer_login" href="login.html">Fazer login</a></p>
   </form>
   <footer id="footer">
     <section id="copyright">© 2024 IEAT. All Rights Reserved.</section>

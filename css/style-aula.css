@@ -72,55 +72,65 @@ footer {
 /* Video Player */
 .video-container {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly; 
     margin-top: 30px;
-}
-
-.video-player {
-    width: 60vw; /* Ajuste conforme necessário */
+    
 }
 
 .video-list-container {
-    width: 20vw; /* Ajuste conforme necessário */
+    border: 0.15em solid indigo;
+    background-color: rgba(255, 255, 255, 0.719);
+    border-radius: 1rem;
 }
 
 iframe {
-    height: 60vh;
-    width: 60vw;
-    margin-left: 10vw;
+    min-height: 60vh;
+    min-width: 60vw;
 }
 
 /* Modules and Video List */
 .module {
     margin-bottom: 10px;
+
+    padding: 1vh 1vw;
+
+    max-width: 30vw;
 }
 
 .module h2 {
-    margin-bottom: 5px;
+    margin: 0.5vw 0.1vh;
     cursor: pointer;
-    color: blue;
-    text-decoration: underline;
+    color: darkblue;
+    text-decoration: none;
+
+    justify-self: center;
 }
 
 .video-list {
     list-style-type: none;
     padding: 0;
     display: none;
+    
 }
 
 .video-list li {
-    margin-bottom: 5px;
+    margin-bottom: 1vh;
     cursor: pointer;
-    color: blue;
+    color: darkblue;
     text-decoration: underline;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    border: 0.1rem solid;
+    
+}
+
+.video-list li :nth-child(n) {
+    padding-left: 1vw;
 }
 
 .play-btn {
-    width: 20px;
-    height: 20px;
+    width: 1vw;
+    height: 1vh;
     background-image: url('../imgs/play-icon.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -129,12 +139,52 @@ iframe {
 
 .not-watched,
 .watched {
-    width: 10px;
-    height: 10px;
+    width: 1vw;
+    height: 1.5vh;
     border-radius: 50%;
     background-color: red;
+    margin-left: 1vw;
 }
 
 .watched {
     background-color: green;
+}
+
+/* Tab content */
+
+.tab-content #geral :nth-child(n) {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    margin: 2.5vh 4vw;
+}
+
+.tab-content .tab-pane p {
+    font-size: larger;
+}
+
+.tab-content #observ {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    margin: 2.5vh 4vw;
+}
+
+.user-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+#question-form {
+    margin: 0.5vh 3vw;
+
+}
+
+#questions-list {
+    list-style-type: none;
+    padding: 0;
+}
+#questions-list li {
+    margin: 10px 0;
 }

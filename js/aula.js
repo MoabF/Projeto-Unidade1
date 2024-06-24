@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const videoSource = document.getElementById("videoSource");
     const videoListItems = document.querySelectorAll(".video-list li");
     const moduleHeaders = document.querySelectorAll(".module h2");
+    const questionForm = document.getElementById("question-form");
+    const questionsList = document.getElementById("questions-list");
 
     videoListItems.forEach(function(item) {
         item.addEventListener("click", function() {
@@ -31,33 +33,29 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-     // Seleciona todos os links das tabs
-     var tabLinks = document.querySelectorAll('#myTab a');
+    questionForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        const questionText = document.getElementById("question-text").value;
+        const newQuestion = document.createElement("li");
+        newQuestion.className = "list-group-item";
 
-     // Itera sobre cada link
-     tabLinks.forEach(function(tabLink) {
-         // Adiciona um evento de clique a cada link
-         tabLink.addEventListener('click', function(e) {
-             e.preventDefault(); // Previne o comportamento padrão de navegação
- 
-             // Remove a classe 'active' de todos os links das tabs
-             tabLinks.forEach(function(link) {
-                 link.classList.remove('active');
-             });
- 
-             // Adiciona a classe 'active' ao link clicado
-             this.classList.add('active');
- 
-             // Obtém o ID da tab-pane associada ao link
-             var tabId = this.getAttribute('href').substr(1);
- 
-             // Remove a classe 'active' de todas as tab-panes
-             document.querySelectorAll('.tab-pane').forEach(function(tabPane) {
-                 tabPane.classList.remove('active');
-             });
- 
-             // Adiciona a classe 'active' à tab-pane correspondente
-             document.getElementById(tabId).classList.add('active');
-         });
-     });
+        const questionContent = `
+            <div class="d-flex align-items-start mb-2">
+                <img src="imgs/user-icon.png" alt="User Icon" class="user-icon me-2">
+                <div>
+                    <h5 class="mb-1">Nome do Aluno</h5>
+                    <p class="mb-1">${questionText}</p>
+                </div>
+            </div>
+            <div>
+                <label for="answer-text-${questionsList.childElementCount}">Sua Resposta:</label>
+                <textarea class="form-control mb-2" id="answer-text-${questionsList.childElementCount}" rows="2"></textarea>
+                <button class="btn btn-primary btn-sm">Enviar Resposta</button>
+            </div>
+        `;
+
+        newQuestion.innerHTML = questionContent;
+        questionsList.appendChild(newQuestion);
+        questionForm.reset();
+    });
 });

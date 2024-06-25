@@ -231,6 +231,18 @@ th,td{
     background-color: rgb(121, 147, 224);
 } 
 
+.margin-right {
+    margin-right: 4vw;
+}
+
+@media (max-width: 768px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     table{
         margin: 5px;

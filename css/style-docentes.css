@@ -88,6 +88,20 @@ header {
     border-radius: 15rem;
 }
 
+@media (max-width: 768px) {
+    .left-align > p,
+    .right-align > p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .left-align > p,
+    .right-align > p {
+        font-size: 14px;
+    }
+}
+
 /*
 nav ul {
     list-style-type: none;

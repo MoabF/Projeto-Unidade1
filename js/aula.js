@@ -2,7 +2,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const moduleHeaders = document.querySelectorAll(".module h2");
     const questionForm = document.getElementById("question-form");
     const questionsList = document.getElementById("questions-list");
-
+    const collapseElements = document.querySelectorAll('[data-toggle="collapse"]');
+    
+    collapseElements.forEach(collapseElement => {
+      collapseElement.addEventListener('click', () => {
+        const target = document.querySelector(collapseElement.getAttribute('data-target'));
+        const bsCollapse = new bootstrap.Collapse(target, {
+          toggle: false
+        });
+        bsCollapse.toggle();
+      });
+    });
 
     moduleHeaders.forEach(function(header) {
         header.addEventListener("click", function() {

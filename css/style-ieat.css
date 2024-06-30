@@ -14,8 +14,8 @@ header {
     display: flex;
     background-color: darkblue;
     color: white;
-    padding: 15px;
-    box-shadow: 0 10px 10px rgb(163, 163, 163);
+    padding: 1.5vw;
+    box-shadow: 0 0 6px 6px rgb(163, 163, 163);
 }
 
 .container{
@@ -176,19 +176,8 @@ button:hover{
 /* Footer */
 
 #footer {
-    display: flex;
-    flex-direction: column-reverse row;
-    flex-shrink: 0;
-    gap: 20vw;
-    align-items: center;
-    font-size: medium;
-    background: darkblue;
-    color: white;
-    padding-left: 4vw;
-}
-
-#socials {
-    float: inline-end;
+    margin-bottom: 0 !important;
+    box-shadow: 0 0 6px 6px rgb(163, 163, 163);
 }
 
 #footer li {
@@ -196,16 +185,6 @@ button:hover{
     padding: 0.3rem 0.3rem;
 }
 
-#photo {
-    margin: 1vh 10vw;
-    width: 30vw;
-    display: block;
-}
-
-.icon {
-    margin: 1vh 0.3vw;
-    width: 2rem;
-}
 table{
     margin: 35px;
     width: 90%;
@@ -230,6 +209,7 @@ th,td{
  tr:nth-child(odd) {
     background-color: rgb(121, 147, 224);
 } 
+
 
 .margin-right {
     margin-right: 4vw;

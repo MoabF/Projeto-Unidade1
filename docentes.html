@@ -7,20 +7,34 @@
     <title>IEAT - Docentes</title>
     <link rel="stylesheet" href="css/style-ieat.css">
     <link rel="stylesheet" href="css/style-docentes.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
     <link rel="icon" href="imgs/icon.ico" type="image/x-icon">
 </head>
 
 <body>
 
-    <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
         <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
             <img class="logo" src="imgs/logo_escuro_1.png" alt="Logo">
         </a>
 
+        
+        <!--
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a href="inicio.html" class="nav-link px-2 ">INÍCIO</a></li>
             <li><a href="sobre.html" class="nav-link px-2 ">SOBRE</a></li>
@@ -29,14 +43,38 @@
             <li><a href="forms/formulario-trabalhe-conosco.html" class="nav-link px-2 ">TRABALHE CONOSCO</a></li>
             <li><a href="forms/formulario-contato.html" class="nav-link px-2 ">CONTATO</a></li>
         </ul>
+        -->
 
-        <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='forms/login.html';" >Login</button>
-            <button type="button" class="btn btn-primary" onclick="location.href='forms/formulario-matricula.html';">Registrar-se</button>
+        <div class="col-md-3 text-end my-3 menu-container d-flex align-items-center">
+            <div class="dropdown me-5 mb-md-0">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    MENU
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button" onclick="location.href='inicio.html';">INÍCIO</button>
+                    <button class="dropdown-item" type="button" onclick="location.href='sobre.html';">SOBRE</button>
+                    <button class="dropdown-item" type="button" onclick="location.href='cursos.html';">CURSOS</button>
+                    <button class="dropdown-item" type="button" onclick="location.href='docentes.html';">DOCENTES</button>
+                    <button class="dropdown-item" type="button"
+                        onclick="location.href='forms/formulario-trabalhe-conosco.html';">TRABALHE</button>
+                    <button class="dropdown-item" type="button"
+                        onclick="location.href='forms/formulario-contato.html';">CONTATO</button>
+                </div>
+            </div>
+            <div>
+                <button type="button" class="btn btn-outline-primary me-2"
+                onclick="location.href='forms/login.html';">Login</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary"
+                onclick="location.href='forms/formulario-matricula.html';">Registrar-se</button>
+            </div>
+
         </div>
     </header>
 
-    
+
     <div class="container centralizador">
         <h1 class="name">DOCENTES</h1>
         <article class="professor">
@@ -84,7 +122,15 @@
                 <p>Azure Data Engineer, Microsoft</p>
             </div>
             <div class="right-align">
-                <p>Adriana Sheng é uma profissional altamente qualificada no campo da tecnologia educacional, cuja dedicação e conhecimento a destacam como uma figura proeminente. Com um mestrado em Tecnologia Educacional, ela possui uma sólida base para suas realizações profissionais. Atualmente, como Azure Data Engineer na Microsoft, Adriana desempenha um papel essencial na criação e gerenciamento de soluções de dados na plataforma Azure. Sua experiência e habilidades técnicas excepcionais a capacitam a desenvolver e implementar soluções inovadoras que impulsionam a eficiência e a eficácia das operações de dados. Adriana é reconhecida por sua capacidade de traduzir conceitos complexos em soluções acessíveis e práticas, ajudando a capacitar organizações a aproveitarem todo o potencial de seus dados para impulsionar o sucesso.</p>
+                <p>Adriana Sheng é uma profissional altamente qualificada no campo da tecnologia educacional, cuja
+                    dedicação e conhecimento a destacam como uma figura proeminente. Com um mestrado em Tecnologia
+                    Educacional, ela possui uma sólida base para suas realizações profissionais. Atualmente, como Azure
+                    Data Engineer na Microsoft, Adriana desempenha um papel essencial na criação e gerenciamento de
+                    soluções de dados na plataforma Azure. Sua experiência e habilidades técnicas excepcionais a
+                    capacitam a desenvolver e implementar soluções inovadoras que impulsionam a eficiência e a eficácia
+                    das operações de dados. Adriana é reconhecida por sua capacidade de traduzir conceitos complexos em
+                    soluções acessíveis e práticas, ajudando a capacitar organizações a aproveitarem todo o potencial de
+                    seus dados para impulsionar o sucesso.</p>
             </div>
         </article>
 
@@ -96,7 +142,16 @@
                 <p>Data Scientist, Research Verticals, Microsoft</p>
             </div>
             <div class="right-align">
-                <p>Thomas Greenhook é um profissional altamente qualificado no campo da análise forense, cujo compromisso e conhecimento o destacam como uma figura de destaque. Com um PhD em Análise Forense, ele possui uma expertise excepcional que serve como base sólida para suas conquistas profissionais. Atualmente, como Data Scientist na divisão de Research Verticals da Microsoft, Thomas desempenha um papel fundamental na análise e interpretação de grandes conjuntos de dados para extrair insights valiosos. Sua profunda compreensão da ciência de dados e sua habilidade em aplicar métodos analíticos avançados permitem que ele desenvolva soluções inovadoras que impulsionam a pesquisa e o desenvolvimento em diversas áreas. Reconhecido por sua capacidade de abordar problemas complexos de forma sistemática e encontrar soluções eficazes, Thomas Greenhook está na vanguarda da transformação digital, moldando o futuro da análise de dados na Microsoft e além.</p>
+                <p>Thomas Greenhook é um profissional altamente qualificado no campo da análise forense, cujo
+                    compromisso e conhecimento o destacam como uma figura de destaque. Com um PhD em Análise Forense,
+                    ele possui uma expertise excepcional que serve como base sólida para suas conquistas profissionais.
+                    Atualmente, como Data Scientist na divisão de Research Verticals da Microsoft, Thomas desempenha um
+                    papel fundamental na análise e interpretação de grandes conjuntos de dados para extrair insights
+                    valiosos. Sua profunda compreensão da ciência de dados e sua habilidade em aplicar métodos
+                    analíticos avançados permitem que ele desenvolva soluções inovadoras que impulsionam a pesquisa e o
+                    desenvolvimento em diversas áreas. Reconhecido por sua capacidade de abordar problemas complexos de
+                    forma sistemática e encontrar soluções eficazes, Thomas Greenhook está na vanguarda da transformação
+                    digital, moldando o futuro da análise de dados na Microsoft e além.</p>
             </div>
         </article>
 
@@ -108,7 +163,17 @@
                 <p>Technical Program Manager II Legal Risk Engineering, Bradesco</p>
             </div>
             <div class="right-align">
-                <p>Jefferson Rodrigues é um profissional altamente qualificado e experiente no campo de DevOps, cujo compromisso e conhecimento o destacam como uma figura proeminente. Com um pós-doutorado em DevOps, ele possui uma expertise excepcional que serve como base sólida para suas conquistas profissionais. Atualmente, como Technical Program Manager II na área de Legal Risk Engineering do Bradesco, Jefferson desempenha um papel crucial na gestão e coordenação de programas técnicos complexos relacionados à mitigação de riscos legais. Sua profunda compreensão dos princípios e práticas de DevOps, combinada com suas habilidades em gerenciamento de projetos e liderança, o capacitam a liderar equipes multifuncionais na implementação de soluções inovadoras que garantem a conformidade legal e a segurança dos sistemas. Reconhecido por sua capacidade de conduzir iniciativas de forma eficaz e eficiente, Jefferson Rodrigues está na vanguarda da transformação digital no setor bancário, moldando o futuro da gestão de riscos e conformidade no Bradesco.</p>
+                <p>Jefferson Rodrigues é um profissional altamente qualificado e experiente no campo de DevOps, cujo
+                    compromisso e conhecimento o destacam como uma figura proeminente. Com um pós-doutorado em DevOps,
+                    ele possui uma expertise excepcional que serve como base sólida para suas conquistas profissionais.
+                    Atualmente, como Technical Program Manager II na área de Legal Risk Engineering do Bradesco,
+                    Jefferson desempenha um papel crucial na gestão e coordenação de programas técnicos complexos
+                    relacionados à mitigação de riscos legais. Sua profunda compreensão dos princípios e práticas de
+                    DevOps, combinada com suas habilidades em gerenciamento de projetos e liderança, o capacitam a
+                    liderar equipes multifuncionais na implementação de soluções inovadoras que garantem a conformidade
+                    legal e a segurança dos sistemas. Reconhecido por sua capacidade de conduzir iniciativas de forma
+                    eficaz e eficiente, Jefferson Rodrigues está na vanguarda da transformação digital no setor
+                    bancário, moldando o futuro da gestão de riscos e conformidade no Bradesco.</p>
             </div>
         </article>
 
@@ -120,8 +185,15 @@
                 <p>Engenheira de Automação, TSA</p>
             </div>
             <div class="right-align">
-                <p>Rita de Cássia Andrade é uma engenheira especializada em Automação, com um mestrado em Digitalização e Automação. Sua formação acadêmica robusta e experiência prática a tornam uma profissional altamente qualificada no campo. Como engenheira de Automação na TSA, ela aplica seu conhecimento para desenvolver soluções inovadoras que impulsionam a eficiência e a produtividade. Com um foco incansável na automação de processos, Rita desempenha um papel crucial na implementação de tecnologias avançadas que transformam operações industriais. Sua abordagem proativa e habilidades técnicas excepcionais a destacam como uma líder na vanguarda da revolução digital, moldando o futuro da automação.
-                </p>    
+                <p>Rita de Cássia Andrade é uma engenheira especializada em Automação, com um mestrado em Digitalização
+                    e Automação. Sua formação acadêmica robusta e experiência prática a tornam uma profissional
+                    altamente qualificada no campo. Como engenheira de Automação na TSA, ela aplica seu conhecimento
+                    para desenvolver soluções inovadoras que impulsionam a eficiência e a produtividade. Com um foco
+                    incansável na automação de processos, Rita desempenha um papel crucial na implementação de
+                    tecnologias avançadas que transformam operações industriais. Sua abordagem proativa e habilidades
+                    técnicas excepcionais a destacam como uma líder na vanguarda da revolução digital, moldando o futuro
+                    da automação.
+                </p>
             </div>
         </article>
 
@@ -133,7 +205,16 @@
                 <p>Hardware Engineer (Lab System Integration), IBM</p>
             </div>
             <div class="right-align">
-                <p>Jaime Lannister é um profissional altamente qualificado e dedicado no campo da bioinformática, cujo compromisso e conhecimento o destacam como uma figura proeminente. Com um doutorado em Bioinformática, ele possui uma expertise excepcional que serve como base sólida para suas conquistas profissionais. Atualmente, como Hardware Engineer na divisão de Lab System Integration da IBM, Jaime desempenha um papel crucial na concepção e integração de sistemas de laboratório avançados. Sua profunda compreensão da bioinformática, combinada com suas habilidades em engenharia de hardware, o capacita a desenvolver soluções inovadoras que impulsionam a pesquisa e o desenvolvimento científico. Reconhecido por sua dedicação e habilidades técnicas excepcionais, Jaime Lannister está na vanguarda da inovação tecnológica, moldando o futuro da integração de sistemas de laboratório na IBM e além.</p>
+                <p>Jaime Lannister é um profissional altamente qualificado e dedicado no campo da bioinformática, cujo
+                    compromisso e conhecimento o destacam como uma figura proeminente. Com um doutorado em
+                    Bioinformática, ele possui uma expertise excepcional que serve como base sólida para suas conquistas
+                    profissionais. Atualmente, como Hardware Engineer na divisão de Lab System Integration da IBM, Jaime
+                    desempenha um papel crucial na concepção e integração de sistemas de laboratório avançados. Sua
+                    profunda compreensão da bioinformática, combinada com suas habilidades em engenharia de hardware, o
+                    capacita a desenvolver soluções inovadoras que impulsionam a pesquisa e o desenvolvimento
+                    científico. Reconhecido por sua dedicação e habilidades técnicas excepcionais, Jaime Lannister está
+                    na vanguarda da inovação tecnológica, moldando o futuro da integração de sistemas de laboratório na
+                    IBM e além.</p>
             </div>
         </article>
 
@@ -145,13 +226,22 @@
                 <p>Hardware Engineer (Lab System Integration), IBM</p>
             </div>
             <div class="right-align">
-                <p>Álvaro Advíncula é um profissional altamente qualificado e experiente no campo da engenharia de hardware, cujo compromisso e conhecimento o destacam como uma figura proeminente. Com um mestrado em Engenharia de Hardware, ele possui uma expertise excepcional que serve como base sólida para suas conquistas profissionais. Atualmente, como Hardware Engineer na divisão de Lab System Integration da IBM, Álvaro desempenha um papel crucial na concepção e integração de sistemas de laboratório avançados. Sua profunda compreensão da engenharia de hardware, combinada com suas habilidades técnicas e criativas, o capacita a desenvolver soluções inovadoras que impulsionam a pesquisa e o desenvolvimento científico. Reconhecido por sua dedicação e capacidade de enfrentar desafios complexos, Álvaro Advíncula está na vanguarda da inovação tecnológica, moldando o futuro da integração de sistemas de laboratório na IBM e além.</p>
+                <p>Álvaro Advíncula é um profissional altamente qualificado e experiente no campo da engenharia de
+                    hardware, cujo compromisso e conhecimento o destacam como uma figura proeminente. Com um mestrado em
+                    Engenharia de Hardware, ele possui uma expertise excepcional que serve como base sólida para suas
+                    conquistas profissionais. Atualmente, como Hardware Engineer na divisão de Lab System Integration da
+                    IBM, Álvaro desempenha um papel crucial na concepção e integração de sistemas de laboratório
+                    avançados. Sua profunda compreensão da engenharia de hardware, combinada com suas habilidades
+                    técnicas e criativas, o capacita a desenvolver soluções inovadoras que impulsionam a pesquisa e o
+                    desenvolvimento científico. Reconhecido por sua dedicação e capacidade de enfrentar desafios
+                    complexos, Álvaro Advíncula está na vanguarda da inovação tecnológica, moldando o futuro da
+                    integração de sistemas de laboratório na IBM e além.</p>
             </div>
         </article>
 
     </div>
 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
                 <svg class="bi" width="30" height="24">
@@ -178,7 +268,7 @@
                 </a>
             </li>
         </ul>
-        
+
     </footer>
 
 </body>

@@ -62,15 +62,16 @@
                         onclick="location.href='forms/formulario-contato.html';">CONTATO</button>
                 </div>
             </div>
-            <div>
-                <button type="button" class="btn btn-outline-primary me-2"
-                onclick="location.href='forms/login.html';">Login</button>
-            </div>
-            <div>
-                <button type="button" class="btn btn-primary"
-                onclick="location.href='forms/formulario-matricula.html';">Registrar-se</button>
-            </div>
 
+        </div>
+
+        <div id="login" class="col-md-3 text-end">
+            <a type="button" class="btn btn-outline-primary me-2" href="forms/login.html">Login</a>
+            <a type="button" class="btn btn-primary" href="forms/formulario-matricula.html">Registrar-se</a>
+        </div>
+        <div id="loggedin">
+            <p id="message"></p>
+            <button type="button" class="btn btn-secondary">Sair</button>
         </div>
     </header>
 
@@ -271,6 +272,7 @@
 
     </footer>
 
+    <script src="js/autenticacao.js"></script>
 </body>
 
 </html>

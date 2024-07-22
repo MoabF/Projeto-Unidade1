@@ -33,7 +33,7 @@
   </header>
   <div class="login-section">
   <h2>Login</h2>
-  <form>
+  <form id="loginForm">
     <div class="form-group">
         <br>
         <label for="login-email">E-mail:</label>
@@ -47,6 +47,10 @@
     <hr><br>
     <p>Não tem uma conta? <a id="Registre-se" href="formulario-matricula.html">Registre-se</a></p>
   </form>
+  <div id="loggedin">
+    <p id="message" style="text-align: center;">Você já está logado!</p>
+    <button type="button" class="btn btn-secondary">Sair</button>
+  </div>
 </div>
   <footer id="footer">
     <section id="copyright">© 2024 IEAT. All Rights Reserved.</section>
@@ -71,6 +75,8 @@
       </ul>
     </section>
   </footer>
+
+  <script src="js/login.js"></script>
 </body>
 
 </html>

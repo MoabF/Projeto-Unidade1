@@ -41,7 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('cart', JSON.stringify(cart));
         renderCart();
     }
-
+    function estaLogado() {
+        return !!sessionStorage.getItem("userId");
+    }
+    
     function clearCart() {
         cart = [];
         localStorage.setItem('cart', JSON.stringify(cart));
@@ -49,8 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     document.getElementById('checkout').addEventListener('click', () => {
-        alert('Compra finalizada com sucesso!');
-        clearCart();
+        if (estaLogado()) {
+            alert('Compra finalizada com sucesso!');
+            clearCart();
+        } else {
+            // Constrói a URL com a mensagem para o usuário
+            const loginUrl = './login.html?message=Loge%20para%20continuar';
+            window.location.href = loginUrl; // Redireciona para a página de login com a mensagem
+        }
     });
 
     document.getElementById('clear-cart').addEventListener('click', () => {

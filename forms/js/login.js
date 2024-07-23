@@ -9,6 +9,7 @@ const loggedinElement = document.getElementById("loggedin");
 document.addEventListener("DOMContentLoaded", () => {
   const userId = sessionStorage.getItem("userId");
   const userEmail = sessionStorage.getItem("userEmail");
+  const aulaLinkElement = document.getElementById("aulaLink");
 
   if (userId) {
     loginFormElement.hidden = true;
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       sessionStorage.removeItem("userType");
       location.reload();
     });
+    aulaLinkElement.style.display = "block";
   }
 });
 

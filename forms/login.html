@@ -77,6 +77,22 @@
   </footer>
 
   <script src="js/login.js"></script>
+  <script>
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(window.location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+
+    // Obtém a mensagem do parâmetro de URL
+    var message = getUrlParameter('message');
+
+    // Verifica se há uma mensagem e exibe como alerta
+    if (message) {
+        alert(message);
+    }
+</script>
 </body>
 
 </html>

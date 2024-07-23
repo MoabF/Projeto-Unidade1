@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IEAT - Contato</title> 
+  <title>IEAT - Matrícula</title>
   <link rel="stylesheet" href="../css/style-ieat.css">
-  <link rel="stylesheet" href="../css/style-forms.css">
+  <link rel="stylesheet" href="../css/style-login.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.css" rel="stylesheet"
         crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -28,7 +28,7 @@
 
 <body>
   <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-    <a href="inicio.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+    <a href="../inicio.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
         <img class="logo" src="../imgs/logo_escuro_1.png" alt="Logo">
     </a>
 
@@ -39,6 +39,7 @@
         <li><a href="../docentes.html" class="nav-link px-2 link-white">DOCENTES</a></li>
         <li><a href="formulario-trabalhe-conosco.html" class="nav-link px-2 link-white">TRABALHE CONOSCO</a></li>
         <li><a href="formulario-contato.html" class="nav-link px-2 link-white">CONTATO</a></li>
+        <li><a href="../aula.html" class="nav-link px-2 link-white">AULA</a></li>
     </ul>
 
     <div id="login" class="col-md-3 text-end">
@@ -53,71 +54,78 @@
         <button type="button" class="btn btn-secondary">Sair</button>
     </div>
 </header>
-  <form>
-    <br>
-    <div class="work">
-      <h2>Fale Conosco</h2>
-      <h4>Possui alguma dúvida? Uma sugestão? Fale conosco! Mande uma mensagem</h4>
-      <br>
-      <hr>
-    </div>
-    <form>
-      <br>
-      <div class="form-group">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" placeholder="Seu nome">
+  <div class="login-section">
+  <h2>Login</h2>
+  <form id="loginForm">
+    <div class="form-group">
+        <br>
+        <label for="login-email">E-mail:</label>
+        <input type="email" id="login-email" name="email" placeholder="Seu e-mail" required>
       </div>
       <div class="form-group">
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" placeholder="Seu e-mail">
+        <label for="login-password">Senha:</label>
+        <input type="password" id="login-password" name="password" placeholder="Sua senha" required>
       </div>
-      <div class="form-group">
-        <label for="i-tel">Telefone:</label>
-        <input type="tel" name="phone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" id="i-tel" placeholder="00 00000-0000">
-      </div>
-      <div class="form-group">
-        <label for="whatsapp">Este número é WhatsApp?</label>
-        <input type="radio" name="whatsapp" value="ewhatsapp"> Sim
-        <input type="radio" name="whatsapp" value="naoewhatsapp"> Não
-      </div>
-      <div class="form-group">
-        <label for="mensagem">Deixe aqui sua mensagem:</label>
-        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
-      </div>
-      <button class="benviar" type="submit">Enviar</button>
-      <button class="blimpar" type="reset">Limpar</button>
-    </form>
+    <button class="benviar" type="submit">Enviar</button>
+    <hr><br>
+    <p>Não tem uma conta? <a id="Registre-se" href="formulario-matricula.html">Registre-se</a></p>
+  </form>
+  <div id="loggedin">
+    <p id="message" style="text-align: center;">Você já está logado!</p>
+    <button type="button" class="btn btn-secondary">Sair</button>
+  </div>
+</div>
+
+<a id="aulaLink" href="../aula.html" class="btn btn-primary" style="display: none;">Ir para a aula</a>
 
 
-    <footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-              <svg class="bi" width="30" height="24">
-                  <use xlink:href="#bootstrap" />
-              </svg>
+<footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap" />
+          </svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">&copy; 2024 IEAT. All Rights Reserved.</span>
+  </div>
+
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex margin-right">
+      <li class="ms-3">
+          <a class="text-muted" href="#">
+              <img src="../imgs/twitter.png" width="24" height="24" alt="Twitter">
           </a>
-          <span class="mb-3 mb-md-0 text-muted">&copy; 2024 IEAT. All Rights Reserved.</span>
-      </div>
-  
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex margin-right">
-          <li class="ms-3">
-              <a class="text-muted" href="#">
-                  <img src="../imgs/twitter.png" width="24" height="24" alt="Twitter">
-              </a>
-          </li>
-          <li class="ms-3">
-              <a class="text-muted" href="#">
-                  <img src="../imgs/github.png" width="24" height="24" alt="Github">
-              </a>
-          </li>
-          <li class="ms-3">
-              <a class="text-muted" href="#">
-                  <img src="../imgs/discord.png" width="24" height="24" alt="Discord">
-              </a>
-          </li>
-      </ul>
-  
-  </footer>
+      </li>
+      <li class="ms-3">
+          <a class="text-muted" href="#">
+              <img src="../imgs/github.png" width="24" height="24" alt="Github">
+          </a>
+      </li>
+      <li class="ms-3">
+          <a class="text-muted" href="#">
+              <img src="../imgs/discord.png" width="24" height="24" alt="Discord">
+          </a>
+      </li>
+  </ul>
+
+</footer>
+
+  <script src="js/login.js"></script>
+  <script>
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(window.location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+
+    // Obtém a mensagem do parâmetro de URL
+    var message = getUrlParameter('message');
+
+    // Verifica se há uma mensagem e exibe como alerta
+    if (message) {
+        alert(message);
+    }
+</script>
 </body>
 
 </html>

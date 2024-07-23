@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEAT - Análise de Redes</title>
+    <link rel="stylesheet" href="css/style-ieat.css">
+    <link rel="stylesheet" href="css/style-aula.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="icon" href="imgs/icon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+        <a href="inicio.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img class="logo" src="imgs/logo_escuro_1.png" alt="Logo">
+        </a>
+
+        
+        <!--
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="inicio.html" class="nav-link px-2 ">INÍCIO</a></li>
+            <li><a href="sobre.html" class="nav-link px-2 ">SOBRE</a></li>
+            <li><a href="cursos.html" class="nav-link px-2 ">CURSOS</a></li>
+            <li><a href="docentes.html" class="nav-link px-2 ">DOCENTES</a></li>
+            <li><a href="forms/formulario-trabalhe-conosco.html" class="nav-link px-2 ">TRABALHE CONOSCO</a></li>
+            <li><a href="forms/formulario-contato.html" class="nav-link px-2 ">CONTATO</a></li>
+        </ul>
+        -->
+
+        <div class="col-md-3 text-end my-3 menu-container d-flex align-items-center">
+            <div class="dropdown me-5 mb-md-0">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    MENU
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button" onclick="location.href='inicio.html';">INÍCIO</button>
+                    <button class="dropdown-item" type="button" onclick="location.href='sobre.html';">SOBRE</button>
+                    <button class="dropdown-item" type="button" onclick="location.href='cursos.html';">CURSOS</button>
+                    <button class="dropdown-item" type="button" onclick="location.href='docentes.html';">DOCENTES</button>
+                    <button class="dropdown-item" type="button"
+                        onclick="location.href='forms/formulario-trabalhe-conosco.html';">TRABALHE</button>
+                    <button class="dropdown-item" type="button"
+                        onclick="location.href='forms/formulario-contato.html';">CONTATO</button>
+                </div>
+            </div>
+
+        </div>
+        
+        <div id="login" class="col-md-3 text-end">
+            <a type="button" class="btn btn-outline-primary me-2" href="forms/login.html">Login</a>
+            <a type="button" class="btn btn-primary" href="forms/formulario-matricula.html">Registrar-se</a>
+        </div>
+        <div id="loggedin">
+            <p id="message"></p>
+            <button type="button" class="btn btn-secondary">Sair</button>
+        </div>
+    </header>
+
+
+    <div class="video-container">
+        <div class="video-player embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8" frameborder="0"
+                gesture="media" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <div id="accordion" class="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Módulo 1: Introdução à Análise de Redes
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="nav-link ac" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0">
+                                <span>O que são Redes Complexas?</span>
+                                <span class="duration">10:00</span>
+                            </li>
+                            <li class="nav-link ac" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0">
+                                <span>Teoria dos Grafos Aplicada</span>
+                                <span class="duration">12:30</span>
+                            </li>
+                            <li class="nav-link ac" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0">
+                                <span>Análise Estrutural de Redes</span>
+                                <span class="duration">15:00</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            Módulo 2: Métricas e Medidas em Redes
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="nav-link ac" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0">
+                                <span>Centralidade e Prestígio</span>
+                                <span class="duration">20:00</span>
+                            </li>
+                            <li class="nav-link ac" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0">
+                                <span>Coeficientes de Clusterização</span>
+                                <span class="duration">25:00</span>
+                            </li>
+                            <li class="nav-link ac" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0">
+                                <span>Medidas de Centralidade em Grafos</span>
+                                <span class="duration">30:00</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            Módulo 3: Aplicações da Análise de Redes
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="nav-link ac" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0">
+                                <span>Redes Sociais e Interacionais</span>
+                                <span class="duration">20:00</span>
+                            </li>
+                            <li class="nav-link ac" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0">
+                                <span>Redes em Epidemiologia</span>
+                                <span class="duration">25:00</span>
+                            </li>
+                            <li class="nav-link ac" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0">
+                                <span>Redes Biológicas e de Cooperação</span>
+                                <span class="duration">30:00</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseFour">
+                            Módulo 4: Ferramentas Avançadas em Análise de Redes
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="nav-link ac" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0">
+                                <span>Simulação de Redes Complexas</span>
+                                <span class="duration">20:00</span>
+                            </li>
+                            <li class="nav-link ac" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0">
+                                <span>Modelagem de Redes Dinâmicas</span>
+                                <span class="duration">25:00</span>
+                            </li>
+                            <li class="nav-link ac" data-video-src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0">
+                                <span>Análise de Redes Temporais</span>
+                                <span class="duration">30:00</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="geral-tab" data-bs-toggle="tab" href="#geral" role="tab"
+                    aria-controls="geral" aria-selected="true">Visão geral</button>
+                <button class="nav-link" id="observ-tab" data-bs-toggle="tab" href="#observ" role="tab"
+                    aria-controls="observ" aria-selected="false">Observações</button>
+                <button class="nav-link" id="question-tab" data-bs-toggle="tab" href="#question" role="tab"
+                    aria-controls="question" aria-selected="false">Perguntas</button>
+
+            </div>
+        </nav>
+
+
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="geral" role="tabpanel" aria-labelledby="geral-tab">
+                <h3>Curso de Análise de Redes - redes de pequeno mundo, círculos sociais ou redes sem escala</h3>
+                <h4>Descrição</h4>
+                <p>A análise de rede - assim como sua prima próxima, análise de tráfego -, tem uso significativo em
+                    atividades de inteligência e contra-inteligência, envolvendo interceptação de comunicações em redes
+                    militares e terroristas, mas também pode ser usada para analisar difusão de epidemias.</p>
+            </div>
+            <div class="tab-pane fade" id="observ" role="tabpanel" aria-labelledby="observ-tab">
+                <div class="d-flex align-items-start mb-2">
+                    <img src="imgs/prof.png" alt="Professor Icon" class="user-icon me-2">
+                    <div>
+                        <h5 class="mb-1">Professor</h5>
+                        <p class="mb-1">Esta é uma observação do professor sobre o conteúdo da aula. Preste atenção aos
+                            detalhes mencionados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="question" role="tabpanel" aria-labelledby="question-tab">
+                
+                <form id="question-form">
+                    <div class="form-group">
+                        <label for="question-text">Sua Pergunta:</label>
+                        <textarea class="form-control" id="question-text" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Pergunta</button>
+                </form>
+                <div class="d-flex justify-content-center"><form id="edicao_bot"></form></div>
+                <ul id="questions-list" class="list-group mt-3"></ul>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">&copy; 2024 IEAT. All Rights Reserved.</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex margin-right">
+            <li class="ms-3">
+                <a class="text-muted" href="#">
+                    <img src="imgs/twitter.png" width="24" height="24" alt="Twitter">
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-muted" href="#">
+                    <img src="imgs/github.png" width="24" height="24" alt="Github">
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-muted" href="#">
+                    <img src="imgs/discord.png" width="24" height="24" alt="Discord">
+                </a>
+            </li>
+        </ul>
+
+    </footer>
+    <script src="js/autenticacao.js"></script>
+    <script src="js/aula.js"></script>
+
+</body>
+
+</html>

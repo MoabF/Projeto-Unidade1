@@ -1,4 +1,54 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="css/style-ieat.css">
+    <link rel="stylesheet" href="css/style-aula.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="icon" href="imgs/icon.ico" type="image/x-icon">
+    <title>IEAT - Sobre</title>
+    <style>
+        div.cartao{
+            height: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="inicio.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img class="logo" src="imgs/logo_escuro_1.png" alt="Logo">
+        </a>
+    
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="inicio.html" class="nav-link px-2 link-white">INÍCIO</a></li>
+            <li><a href="sobre.html" class="nav-link px-2 link-white">SOBRE</a></li>
+            <li><a href="cursos.html" class="nav-link px-2 link-white">CURSOS</a></li>
+            <li><a href="docentes.html" class="nav-link px-2 link-white">DOCENTES</a></li>
+            <li><a href="forms/formulario-trabalhe-conosco.html" class="nav-link px-2 link-white">TRABALHE CONOSCO</a></li>
+            <li><a href="forms/formulario-contato.html" class="nav-link px-2 link-white">CONTATO</a></li>
+            <li><a href="aula.html" class="nav-link px-2 link-white">AULA</a></li>
+        </ul>
+    
+        <div id="login" class="col-md-3 text-end">
+            <a type="button" class="btn btn-secondary mx-5" href="forms/cart.html">
+                <img src="imgs/carrinho.png"  width="24" height="24" alt="Carrinho de Compras">
+            </a>
+            <a type="button" class="btn btn-outline-primary me-2" href="forms/login.html">Login</a>
+            <a type="button" class="btn btn-primary" href="forms/formulario-matricula.html">Registrar-se</a>
+        </div>
+        <div id="loggedin">
+            <p id="message"></p>
+            <button type="button" class="btn btn-secondary">Sair</button>
+            <a type="button" class="btn btn-secondary" href="forms/cart.html">
+                <img src="imgs/carrinho.png"  width="24" height="24" alt="Carrinho de Compras">
+            </a>
+        </div>
+    </header>
+
+
+<!--<!DOCTYPE html>
 <html>
 
 <head>
@@ -30,8 +80,44 @@
                 </nav>
             </div>
         </div>
-    </header>
-    <div class="container centralizador">
+    </header>-->
+    <div class="w-100 my-4 pb-3 d-flex flex-wrap justify-content-center text-center">
+        <h1 class="col-12">SOBRE</h1>
+        <h1 class="my-4 text-start col-9">Proposta pedagógica</h1>
+        <div class="col-md-6 col-10 d-flex align-items-end">
+            <p class="text-start">
+                O fundador do Instituto Tecnológico Alan Turing começou um trabalho voltado para crianças e jovens por
+                meio da educação, levando em consideração aspectos relacionados às suas identidades e necessidades
+                individuais. Ele propôs uma abordagem educacional muito prática, centrada na presença, no amor pela
+                natureza, na solidariedade e no aprendizado prático. Em vez de criar uma nova teoria pedagógica, ele
+                desenvolveu uma proposta educacional que atendesse às demandas da realidade da época. Os princípios da
+                educação no IEAT resistiram ao longo do tempo por duas razões principais: a firme crença do fundador e
+                dos colaboradores do IEAT na missão e a capacidade de se adaptar a culturas em constante mudança.
+               
+            </p>
+        </div>
+        <img src="./imgs/ensino.jpg" alt="Ensino" class="col-md-3 col-10 d-block mb-3"/>
+        <div class="col-9">
+            <p class="text-start">
+                A prática pedagógica no IEAT favorece o diálogo entre as ciências, as sociedades e as culturas sob uma
+                visão da realidade, o que possibilita compreender as necessidades humanas e sociais atuais,
+                questioná-las, encontrar soluções e enfrentar desafios. Ao considerar a interconexão entre as diferentes
+                dimensões da pessoa, incluindo a dimensão espiritual, ela busca promover a integralidade e a totalidade
+                dos sujeitos da educação, integrando fé, cultura e vida. Ao mesmo tempo, valoriza a diversidade, a
+                diferença, a solidariedade, a consciência global e a promoção de relações justas, incorporando uma
+                variedade de conhecimentos, linguagens, mídias e tecnologias em suas metodologias, conforme o Projeto
+                Educativo do IEAT.
+            </p>
+        </div>  
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-primary m-3" href="docentes.html">Saiba mais sobre os docentes de nossa Instituição!</a>
+            <a class="btn btn-primary m-3" href="cursos.html">Saiba mais sobre os cursos ofertados!</a>
+        </div>
+       
+      
+    </div>
+
+    <!--<div class="container centralizador">
         <h1>SOBRE</h1>
         <div class="conteudo-coluna post centralizador">
             <div class="proposta">
@@ -66,31 +152,39 @@
                 Saiba mais sobre os cursos ofertados!
             </a>
         </div>
-    </div>
+    </div>-->
 
-    <footer id="footer">
-        <section id="copyright">© 2024 IEAT. All Rights Reserved.</section>
-        <section id="links">
-            <ul>
-                <li><a href="https://github.com/MoabF/Projeto-Unidade1">Sobre</a></li>
-                <li><a href="https://github.com/MoabF/Projeto-Unidade1">Cursos</a></li>
-                <li><a href="https://github.com/MoabF/Projeto-Unidade1">Contato</a></li>
-                <li><a href="https://github.com/MoabF/Projeto-Unidade1">Trabalhe Conosco</a></li>
-            </ul>
-        </section>
-        <section id="socials">
-            <ul>
-                <li><a href="https://github.com/MoabF/Projeto-Unidade1"><img class="icon" src="imgs/github.png"
-                            alt="Github Icon"></a></li>
-                <li><a href="https://github.com/MoabF/Projeto-Unidade1"><img class="icon" src="imgs/discord.png"
-                            alt="Discord Icon"></a></li>
-                <li><a href="https://github.com/MoabF/Projeto-Unidade1"><img class="icon" src="imgs/twitter.png"
-                            alt="Twitter Icon"></a></li>
-                <li><a href="https://github.com/MoabF/Projeto-Unidade1"><img class="icon" src="imgs/youtube.png"
-                            alt="Youtube Icon"></a></li>
-            </ul>
-        </section>
+    <footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">&copy; 2024 IEAT. All Rights Reserved.</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex margin-right">
+            <li class="ms-3">
+                <a class="text-muted" href="#">
+                    <img src="imgs/twitter.png" width="24" height="24" alt="Twitter">
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-muted" href="#">
+                    <img src="imgs/github.png" width="24" height="24" alt="Github">
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-muted" href="#">
+                    <img src="imgs/discord.png" width="24" height="24" alt="Discord">
+                </a>
+            </li>
+        </ul>
+
     </footer>
+    <script src="js/autenticacao.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 
 </html>

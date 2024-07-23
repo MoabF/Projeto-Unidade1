@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IEAT - Contato</title> 
-  <link rel="stylesheet" href="../css/style-ieat.css">
-  <link rel="stylesheet" href="../css/style-forms.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.css" rel="stylesheet"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online - Carrinho de Compras</title>
+    <link rel="stylesheet" href="../css/style-ieat.css">
+    <link rel="stylesheet" href="css/style-cart.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.css" rel="stylesheet"
         crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -24,8 +23,8 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <link rel="icon" href="../imgs/icon.ico" type="image/x-icon">
-</head>
 
+</head>
 <body>
   <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
     <a href="inicio.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
@@ -39,6 +38,7 @@
         <li><a href="../docentes.html" class="nav-link px-2 link-white">DOCENTES</a></li>
         <li><a href="formulario-trabalhe-conosco.html" class="nav-link px-2 link-white">TRABALHE CONOSCO</a></li>
         <li><a href="formulario-contato.html" class="nav-link px-2 link-white">CONTATO</a></li>
+        <li><a href="../aula.html" class="nav-link px-2 link-white">AULA</a></li>
     </ul>
 
     <div id="login" class="col-md-3 text-end">
@@ -53,42 +53,21 @@
         <button type="button" class="btn btn-secondary">Sair</button>
     </div>
 </header>
-  <form>
-    <br>
-    <div class="work">
-      <h2>Fale Conosco</h2>
-      <h4>Possui alguma dúvida? Uma sugestão? Fale conosco! Mande uma mensagem</h4>
-      <br>
-      <hr>
+    <main>
+    <div class="Carrinho">
+        <div class="namecursos"><h1><a href="index.html">Cursos</a></h1></div>
+        <section class="cart">
+            <h2>Carrinho de Compras</h2>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <strong>Total:</strong> R$<span id="cart-total">0.00</span>
+            </div>
+            <button id="checkout">Finalizar Compra</button>
+            <button id="clear-cart">Limpar Carrinho</button>
+        </section>
     </div>
-    <form>
-      <br>
-      <div class="form-group">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" placeholder="Seu nome">
-      </div>
-      <div class="form-group">
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" placeholder="Seu e-mail">
-      </div>
-      <div class="form-group">
-        <label for="i-tel">Telefone:</label>
-        <input type="tel" name="phone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" id="i-tel" placeholder="00 00000-0000">
-      </div>
-      <div class="form-group">
-        <label for="whatsapp">Este número é WhatsApp?</label>
-        <input type="radio" name="whatsapp" value="ewhatsapp"> Sim
-        <input type="radio" name="whatsapp" value="naoewhatsapp"> Não
-      </div>
-      <div class="form-group">
-        <label for="mensagem">Deixe aqui sua mensagem:</label>
-        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
-      </div>
-      <button class="benviar" type="submit">Enviar</button>
-      <button class="blimpar" type="reset">Limpar</button>
-    </form>
-
-
+    </main>
+    
     <footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">
           <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
@@ -118,6 +97,8 @@
       </ul>
   
   </footer>
-</body>
 
+  <script src="js/cart.js"></script>
+  <script src="../js/autenticacao.js"></script>
+</body>
 </html>

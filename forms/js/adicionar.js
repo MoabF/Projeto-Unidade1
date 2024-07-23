@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const courses = document.querySelectorAll('.post-curso');
+    const courses = document.querySelectorAll('.card');
     
 
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
